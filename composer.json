@@ -1,0 +1,41 @@
+{
+    "name": "packimaster/auto-complete",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/packimaster/autocomplete",
+    "keywords": ["Laravel", "AutoComplete"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "PackiMaster\\AutoComplete\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PackiMaster\\AutoComplete\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PackiMaster\\AutoComplete\\AutoCompleteServiceProvider"
+            ],
+            "aliases": {
+                "AutoComplete": "PackiMaster\\AutoComplete\\Facades\\AutoComplete"
+            }
+        }
+    }
+}
